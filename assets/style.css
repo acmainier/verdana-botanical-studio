@@ -1,0 +1,16 @@
+:root {
+  --color-bg: #f5efe6;
+  --color-dark: #2c1a0e;
+  --color-primary: #c4622d;
+  --color-secondary: #d4a89a;
+  --color-surface: #ede3d8;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Source Sans 3", sans-serif;
+  --border-radius: 8px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-family: var(--font-body);
+}
