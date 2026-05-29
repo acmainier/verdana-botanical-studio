@@ -37,6 +37,7 @@ header {
   top: 0;
   background-color: var(--color-bg);
   z-index: 100;
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .nav-bar {
@@ -47,7 +48,7 @@ header {
 }
 
 .logo {
-  width: 300px;
+  width: 250px;
 }
 
 .nav-links {
@@ -111,7 +112,7 @@ header {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .section-title {
@@ -165,4 +166,52 @@ footer {
   color: var(--color-bg);
   font-size: 0.8rem;
   padding: 20px;
+}
+
+.about {
+  padding: 20px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+.about-columns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-text p::first-letter {
+  font-size: 3rem;
+  color: var(--color-primary);
+  float: left;
+  line-height: 0.1;
+  margin-right: 2px;
+}
+.about-img {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.about-img img {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-primary);
+  width: 100%;
+  max-width: 300px;
 }
