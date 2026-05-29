@@ -79,6 +79,17 @@ header {
   height: 350px;
   position: relative;
   color: var(--color-bg);
+  padding: 20px;
+}
+
+.hero h1 {
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero p {
+  text-align: center;
+  text-wrap: balance;
 }
 
 .hero::before {
@@ -181,7 +192,7 @@ footer {
 .about-columns {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -214,4 +225,5 @@ footer {
   border: 1px solid var(--color-primary);
   width: 100%;
   max-width: 300px;
+  min-width: 100%;
 }
