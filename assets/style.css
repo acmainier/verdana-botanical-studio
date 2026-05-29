@@ -1,10 +1,13 @@
 :root {
+  /* Color for background */
   --color-bg: #f5efe6;
+  /* Color for text and dark elements */
   --color-dark: #2c1a0e;
   --color-primary: #c4622d;
   --color-secondary: #d4a89a;
   --color-surface: #ede3d8;
   --font-display: "Playfair Display", serif;
+  /* Font for body text and general content */
   --font-body: "Source Sans 3", sans-serif;
   --border-radius: 8px;
 }
@@ -13,4 +16,15 @@ body {
   background-color: var(--color-bg);
   color: var(--color-dark);
   font-family: var(--font-body);
+}
+
+.logo {
+  width: 400px;
+}
+
+.hero {
+  background-image: url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
 }
