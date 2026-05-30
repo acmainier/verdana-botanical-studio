@@ -12,6 +12,8 @@
   /* Font for body text and general content */
   --font-body: "Source Sans 3", sans-serif;
   --border-radius: 8px;
+  --inside-border-radius: 4px;
+  --standard-padding: 20px;
 }
 
 * {
@@ -32,6 +34,11 @@ h3 {
   font-family: var(--font-display);
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -44,7 +51,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: var(--standard-padding);
 }
 
 .logo {
@@ -123,7 +130,7 @@ header {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: var(--standard-padding);
 }
 
 .section-title {
@@ -148,7 +155,7 @@ header {
 
 .card {
   background-color: var(--color-surface);
-  padding: 20px;
+  padding: var(--standard-padding);
   border-radius: var(--border-radius);
   flex: 1 1 300px;
   box-shadow: 0 4px 6px var(--color-secondary);
@@ -159,13 +166,22 @@ header {
   color: var(--color-primary);
 }
 
+.card p {
+  text-align: center;
+  text-wrap: balance;
+}
+
 .card-img {
   width: 100%;
-  border-radius: var(--border-radius);
+  border-radius: var(--inside-border-radius);
   height: 200px;
   object-fit: cover;
   margin-bottom: 15px;
   border: 1px solid var(--color-primary);
+}
+
+.italic {
+  font-style: italic;
 }
 
 footer {
@@ -176,17 +192,27 @@ footer {
   background-color: var(--color-dark);
   color: var(--color-bg);
   font-size: 0.8rem;
-  padding: 20px;
+  padding: var(--standard-padding);
 }
 
-.about {
-  padding: 20px 20px;
+.main-section {
+  padding: var(--standard-padding);
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.about h1 {
-  margin-bottom: 20px;
+.main-section p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.main-section p::first-letter {
+  font-size: 3rem;
+  color: var(--color-primary);
+  float: left;
+  line-height: 0.1;
+  margin-right: 2px;
 }
 
 .about-columns {
@@ -201,19 +227,6 @@ footer {
   flex: 2;
 }
 
-.about-text p {
-  margin-bottom: 30px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.about-text p::first-letter {
-  font-size: 3rem;
-  color: var(--color-primary);
-  float: left;
-  line-height: 0.1;
-  margin-right: 2px;
-}
 .about-img {
   display: flex;
   justify-content: flex-end;
